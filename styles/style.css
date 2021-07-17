@@ -924,7 +924,7 @@ page
 ******************************************************************/
 .main-visual {
   position: relative;
-  background-image: url(../../images/main-visual.png);
+  background-image: url(https://github.com/amahiro/coding04/blob/main/images/main-visual.png?raw=true);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1162,7 +1162,7 @@ page
   position: absolute;
   top: -30px;
   left: -170px;
-  background-image: url(../../images/about-bg.png);
+  background-image: url(https://github.com/amahiro/coding04/blob/main/images/about-bg.png?raw=true);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1317,7 +1317,7 @@ page
   position: absolute;
   top: -30px;
   right: -170px;
-  background-image: url(../../images/message-bg.png);
+  background-image: url(https://github.com/amahiro/coding04/blob/main/images/message-bg.png?raw=true);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1448,7 +1448,7 @@ page
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../../images/service-bg.png);
+  background-image: url(https://github.com/amahiro/coding04/blob/main/images/service-bg.png?raw=true);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1456,7 +1456,7 @@ page
 
 @media screen and (max-width: 700px) {
   .service::after {
-    background-image: url(../../images/service-sm.png);
+    background-image: url(https://github.com/amahiro/coding04/blob/main/images/service-sm.png?raw=true);
   }
 }
 
@@ -1940,11 +1940,11 @@ page
 }
 
 .contact-recruit__body:first-child::after {
-  background-image: url(../../images/contact.png);
+  background-image: url(https://github.com/amahiro/coding04/blob/main/images/contact.png?raw=true);
 }
 
 .contact-recruit__body:last-child::after {
-  background-image: url(../../images/recruit.png);
+  background-image: url(https://github.com/amahiro/coding04/blob/main/images/recruit.png?raw=true);
 }
 
 .contact-recruit__text {
