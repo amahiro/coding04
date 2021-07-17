@@ -13,12 +13,12 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url(../../images/service-bg.png);
+        background-image: url(https://github.com/amahiro/coding04/blob/main/images/service-bg.png?raw=true);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         @include mq(sp) {
-            background-image: url(../../images/service-sm.png);
+            background-image: url(https://github.com/amahiro/coding04/blob/main/images/service-sm.png?raw=true);
         }
     }
 
