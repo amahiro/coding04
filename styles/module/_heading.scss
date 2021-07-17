@@ -1,0 +1,9 @@
+.heading {
+    white-space: nowrap;
+    font-weight: bold;
+    @include font-size(50);
+    color: #222222;
+    @include mq(sp) {
+        @include font-size(30);
+    }
+}

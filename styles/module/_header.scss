@@ -1,0 +1,14 @@
+.header {
+    padding: 22px 0;
+    background-color: #fff;
+}
+.header__logo {
+    width: 110px;
+    transition: all .3s;
+    &:hover {
+        opacity: .6;
+    }
+    @include mq(sp) {
+        z-index: 9999;
+    }
+}

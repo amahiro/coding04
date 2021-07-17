@@ -1,0 +1,102 @@
+.message {
+    padding-top: 100px;
+    margin-bottom: 140px;
+    overflow-x: hidden;
+    @include mq(sp) {
+        padding-top: 136px;
+        margin-bottom: 70px;
+    }
+}
+.message__body {
+    position: relative;
+    @include mq(tab-sm) {
+        padding-right: 20px;
+    }
+    @include mq(sp) {
+        padding-right: 0;
+    }
+    &.flex {
+        @include mq(sp) {
+            flex-direction: column-reverse;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -170px;
+        background-image: url(../../images/message-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 678px;
+        height: 145px;
+        z-index: -10;
+        @include mq() {
+            top: -90px;
+            right: -50px;
+            background-size: contain;
+            width: 500px;
+            height: 140px;
+        }
+        @include mq(sp) {
+            top: -86px;
+            right: -36px;
+            background-size: contain;
+            width: 329px;
+            height: 122px;
+        }
+    }
+}
+.message__text {
+    margin-left: 80px;
+    width: 35%;
+    > .fadein {
+        opacity: 0;;
+    }
+    > .scrollin {
+        animation: fadein-bottom .5s ease-in-out forwards;
+    }
+    @include mq() {
+        margin-left: 40px;
+    }
+    @include mq(sp) {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+.message__image {
+    flex: 1;
+    @include mq(tab-sm) {
+        height: 430px;
+        > img {
+            height: 100%;
+        }
+    }
+    @include mq(sp) {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+.message__heading {
+    margin-bottom: 30px;
+    @include mq(sp) {
+        margin-bottom: 13px;
+    }
+}
+.message__lead {
+    margin-bottom: 70px;
+    line-height: 1.6;
+    @include font-size(16);
+    color: #222222;
+    @include mq(sp) {
+        margin-bottom: 30px;
+        line-height: 2;
+        @include font-size(12);
+    }
+}
+.message__btn {
+    @include mq(sp) {
+        text-align: center;
+    }
+}

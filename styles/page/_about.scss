@@ -1,0 +1,99 @@
+.about {
+    position: relative;
+    padding-top: 175px;
+    z-index: -100;
+    @include mq(sp) {
+        padding-top: 137px;
+    }
+    @include mq(sp-sm) {
+        overflow-x: hidden;
+    }
+}
+.about__body {
+    position: relative;
+    &.flex {
+        @include mq(sp) {
+            flex-direction: column-reverse;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: -170px;
+        background-image: url(../../images/about-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 636px;
+        height: 145px;
+        z-index: -10;
+        @include mq() {
+            top: -90px;
+            left: -50px;
+            background-size: contain;
+            width: 500px;
+            height: 140px;
+        }
+        @include mq(sp) {
+            top: -86px;
+            left: -36px;
+            background-size: contain;
+            width: 329px;
+            height: 122px;
+        }
+    }
+}
+.about__text {
+    margin-right: 80px;
+    width: 35%;
+    > .fadein {
+        opacity: 0;;
+    }
+    > .scrollin {
+        animation: fadein-bottom .5s ease-in-out forwards;
+    }
+    @include mq() {
+        margin-right: 40px;
+    }
+    @include mq(sp) {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+.about__image {
+    flex: 1;
+    @include mq(tab-sm) {
+        height: 430px;
+        > img {
+            height: 100%;
+        }
+    }
+    @include mq(sp) {
+        height: auto;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+.about__heading {
+    margin-bottom: 30px;
+    @include mq(sp) {
+        margin-bottom: 13px;
+    }
+}
+.about__lead {
+    margin-bottom: 70px;
+    line-height: 1.6;
+    @include font-size(16);
+    color: #222222;
+    @include mq(sp) {
+        margin-bottom: 30px;
+        line-height: 2;
+        @include font-size(12);
+    }
+}
+.about__btn {
+    @include mq(sp) {
+        text-align: center;
+    }
+}

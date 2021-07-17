@@ -1,0 +1,99 @@
+.gnav {
+    > ul {
+        > li {
+            margin-left: 54px;
+            display: block;
+            &:first-child {
+                margin-left: 0;
+            }
+            > .gnav__link {
+                &:hover {
+                    > span {
+                        color: #F27E1A;;
+                    }
+                }
+                > span {
+                    font-weight: bold;
+                    @include font-size(20);
+                    color: #222222;
+                    transition: all .3s;
+                }
+                > .arrow {
+                    display: none;
+                }
+            }
+        }
+        .gnav__sp {
+            display: none;
+        }
+    }
+    @include mq(sp) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 110px 40px 60px;
+        transform: translateY(-100%);
+        transition: all .6s ease-in-out;
+        z-index: -10;
+        > ul {
+            flex-direction: column;
+            > li {
+                margin: 0;
+                padding: 20px 0 24px;
+                display: flex;
+                border-bottom: 1px solid #D3D3D3;
+                width: 100%;
+                &:first-child {
+                    padding-top: 0;
+                }
+                &:nth-child(4) {
+                    margin-bottom: 27px;
+                }
+                > .gnav__link {
+                    width: 100%;
+                    &.flex {
+                        justify-content: space-between;
+                    }
+                    &:hover {
+                        > .arrow {
+                            background-color: #F27E1A;
+                            &::after {
+                                background-color: #F27E1A;
+                            }
+                        }
+                    }
+                    > .arrow {
+                        display: block;
+                        transition: all .3s;
+                        &::after {
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+            > .gnav__sp {
+                padding: 0;
+                display: block;
+                border-bottom: none;
+                > .flex {
+                    justify-content: space-around;
+                }
+                > ul {
+                    > li {
+                        > a {
+                            font-weight: bold;
+                            @include font-size(20);
+                            color: #222222;
+                            transition: all .3s;
+                            &:hover {
+                                color: #F27E1A;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

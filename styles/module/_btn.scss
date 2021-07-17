@@ -1,0 +1,33 @@
+.btn {
+    > a {
+        display: inline-block;
+        padding: 17px 73px;
+        background-color: #F27E1A;
+        border-radius: 4px;
+        font-weight: bold;
+        @include font-size(20);
+        color: #fff;
+        transition: all .3s;
+        white-space: nowrap;
+        @include mq(tab-sm) {
+            padding: 15px 50px;
+            @include font-size(18);
+        }
+        @include mq(sp) {
+            padding: 15px 60px;
+            @include font-size(16);
+        }
+        &:hover {
+            background-color: #FFA252;
+        }
+    }
+    &--sm {
+        @extend .btn;
+        > a {
+            padding: 17px 82px;
+            @include mq(sp) {
+                padding: 15px 68px;
+            }
+        }
+    }
+}

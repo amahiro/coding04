@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0b4016e942.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/pulgins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title></title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="inner flex">
+            <h1 class="header__logo">
+                <a href="">
+                    <img src="images/header-logo.png" alt="株式会社SUGOI">
+                </a>
+            </h1>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="gnav">
+                <ul class="flex">
+                    <li class="flex">
+                        <a href="" class="gnav__link flex">
+                            <span>About Us</span>
+                            <div class="arrow"></div>
+                        </a>
+                    </li>
+                    <li class="flex">
+                        <a href="" class="gnav__link flex">
+                            <span>Company</span>
+                            <div class="arrow"></div>
+                        </a>
+                    </li>
+                    <li class="flex">
+                        <a href="" class="gnav__link flex">
+                            <span>Service</span>
+                            <div class="arrow"></div>
+                        </a>
+                    </li>
+                    <li class="flex">
+                        <a href="" class="gnav__link flex">
+                            <span>News</span>
+                            <div class="arrow"></div>
+                        </a>
+                    </li>
+                    <li class="gnav__sp">
+                        <ul class="flex">
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="">Recruit</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+    <main>
+        <!-- main-visual -->
+        <section class="main-visual">
+            <div class="inner">
+                <div class="main-visual__body">
+                    <div class="main-visual__text">
+                        <p class="main-visual__en">
+                            We make<br>
+                            SUGOIservice
+                        </p>
+                        <p class="main-visual__ja">
+                            未来につなぐ、すごいをつくる
+                        </p>
+                    </div>
+                    <a href="" class="main-visual__announce announce flex">
+                        <span class="announce__title">News</span>
+                        <time class="announce__date" datetime="2020-12-10">2020.12.10</time>
+                        <p class="announce__text">パートナー企業の株式会社〇〇と連携し、すごいサービスをリリースいたしました</p>
+                        <div class="arrow--white announce__arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- /main-visual -->
+        <!-- about -->
+        <section class="about">
+            <div class="inner">
+                <div class="about__body flex">
+                    <div class="about__text">
+                        <h2 class="heading about__heading fadein">About Us</h2>
+                        <p class="about__lead fadein">わたしたちはWeb制作に携わる方の業務効率化を図るサービスを作っています。お客様に「これはすごい」と言っていただけるような製品づくりを目指しています。</p>
+                        <div class="btn--sm about__btn fadein">
+                            <a href="">詳しく見る</a>
+                        </div>
+                    </div>
+                    <div class="about__image">
+                        <img src="images/about.png" alt="aboutの画像">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /about -->
+        <!-- message -->
+        <section class="message">
+            <div class="inner">
+                <div class="message__body flex--rv">
+                    <div class="message__text">
+                        <h2 class="heading message__heading fadein">Message</h2>
+                        <p class="message__lead fadein">進行やデザインから開発・リリースまで多岐にわたる工程があるWeb制作になにかできることはないかと会社を立ち上げてから10年。これまでの歩みととこれからの展望をご紹介します。</p>
+                        <div class="btn--sm message__btn fadein">
+                            <a href="">詳しく見る</a>
+                        </div>
+                    </div>
+                    <div class="message__image">
+                        <img src="images/message.png" alt="messageの画像">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /message -->
+        <!-- service -->
+        <section class="service">
+            <h2 class="heading service__heading">Service</h2>
+            <div class="inner service__inner">
+                <div class="swiper-container service__swiper-container">
+                    <div class="swiper-wrapper flex service__swiper-wrapper">
+                        <div class="swiper-slide service__slide fadein">
+                            <div class="service__item">
+                                <div class="service__image">
+                                    <img src="images/sp.png" alt="スケジュール管理用すごいカレンダー">
+                                </div>
+                                <span class="service__title">スケジュール管理用<br>すごいカレンダー</span>
+                                <p class="service__text">
+                                    自分のスケジュールはもちろん、さまざまな案件のマイルストーンやメンバーのスケジュールの把握が可能なカレンダーアプリです。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide service__slide fadein">
+                            <div class="service__item">
+                                <div class="service__image">
+                                    <img src="images/desktop.png" alt="業務効率アップ用すごいソフト">
+                                </div>
+                                <span class="service__title">業務効率アップ用<br>すごいソフト</span>
+                                <p class="service__text">
+                                    自分がよく使っているアプリの順番で並べてくれるすごいソフトです。ダークモードとの切り替えも可能です。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide service__slide fadein">
+                            <div class="service__item">
+                                <div class="service__image">
+                                    <img src="images/tab.png" alt="タブレット専用のすごいアプリ">
+                                </div>
+                                <span class="service__title">タブレット専用の<br>すごいアプリ</span>
+                                <p class="service__text">
+                                    メンバーとのコミュニケーションに活用できるタブレット専用アプリです。社内が活発になるすごいアプリです。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination service__pagination"></div>
+                    <div class="swiper-button-prev service__prev">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="swiper-button-next service__next">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="btn service__btn">
+                    <a href="">サービス一覧</a>
+                </div>
+            </div>
+        </section>
+        <!-- /service -->
+        <!-- news -->
+        <section class="news">
+            <div class="inner">
+                <h2 class="heading news__heading">News</h2>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <a href="" class="flex">
+                            <time class="news__date" datetime="2020-12-10">2020.12.10</time>
+                            <p class="news__text">パートナー企業の株式会社〇〇と連携し、すごいサービスをリリースいたしました</p>
+                            <div class="arrow news__arrow"></div>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <a href="" class="flex">
+                            <time class="news__date" datetime="2020-12-03">2020.12.03</time>
+                            <p class="news__text">子会社（〇〇〇〇株式会社）吸収合併に関するお知らせ</p>
+                            <div class="arrow news__arrow"></div>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <a href="" class="flex">
+                            <time class="news__date" datetime="2020-12-03">2020.12.03</time>
+                            <p class="news__text">プライバシーポリシーを改定いたしました</p>
+                            <div class="arrow news__arrow"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn news__btn">
+                    <a href="" class="btn news__btn">ニュース一覧</a>
+                </div>
+            </div>
+        </section>
+        <!-- /news -->
+        <!-- contact-recruit -->
+        <section class="contact-recruit">
+            <div class="inner flex">
+                <a href="" class="contact-recruit__body">
+                    <span class="contact-recruit__text">Contact Us</span>
+                </a>
+                <a href="" class="contact-recruit__body">
+                    <span class="contact-recruit__text">Recruit</span>
+                </a>
+            </div>
+        </section>
+        <!-- /contact-recruit -->
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="inner">
+            <div class="footer__body flex">
+                <div class="footer__logo">
+                    <img src="images/footer-logo.png" alt="株式会社SUGOI">
+                </div>
+                <ul class="fnav flex">
+                    <li class="fnav__item">
+                        <a href="">About Us</a>
+                    </li>
+                    <li class="fnav__item">
+                        <a href="">Company</a>
+                    </li>
+                    <li class="fnav__item">
+                        <a href="">Service</a>
+                    </li>
+                    <li class="fnav__item">
+                        <a href="">News</a>
+                    </li>
+                    <li class="fnav__item">
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li class="fnav__item">
+                        <a href="">Recruit</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__policy flex">
+                <div class="footer__privacy">
+                    <a href="">プライバシーポリシー</a>
+                </div>
+                <div class="footer__security">
+                    <a href="">情報セキュリティ方針</a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            <small>&copy; 2020 omsss22 All rights reserved.</small>
+        </p>
+    </footer>
+    <!-- /footer -->
+    <!-- fixed -->
+    <div class="page-top">
+        <a href="">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    <!-- /fixed -->
+    <!-- script -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="scripts/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper/swiper.js"></script>
+    <script src="/scripts/hamburger.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

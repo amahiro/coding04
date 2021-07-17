@@ -1,0 +1,39 @@
+.fnav {
+    width: 440px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @include mq(sp) {
+        width: 100%;
+    }
+}
+.fnav__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    @include mq(sp) {
+        margin-right: 0;
+        text-align: center;
+        width: 50%;
+    }
+    &:nth-child(4) {
+        margin-right: 0;
+    }
+    &:nth-child(5),
+    &:nth-child(6) {
+        margin-bottom: 0;
+        @include mq(sp) {
+            margin-bottom: 30px;
+        }
+    }
+    > a {
+        font-weight: bold;
+        @include font-size(20);
+        color: #fff;
+        transition: all .3s;
+        @include mq(sp) {
+            @include font-size(16);
+        }
+        &:hover {
+            color: #F27E1A;
+        }
+    }
+}

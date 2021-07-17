@@ -1,0 +1,68 @@
+.contact-recruit {
+    margin-bottom: 140px;
+    @include mq(sp) {
+        margin-bottom: 70px;
+    }
+    > .flex {
+        @include mq(sp) {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+}
+.contact-recruit__body {
+    position: relative;
+    padding: 280px 0 21px 14px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all .3s;
+    overflow: hidden;
+    @include mq(sp) {
+        width: 100%;
+        padding: 200px 0 10px 20px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all .3s;
+    }
+    &:hover {
+        &::after {
+            transform: scale(1.1);
+        }
+    }
+    &:first-child {
+        margin-right: 40px;
+        @include mq(sp) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &::after {
+            background-image: url(../../images/contact.png);
+        }
+    }
+    &:last-child {
+        &::after {
+            background-image: url(../../images/recruit.png);
+        }
+    }
+}
+.contact-recruit__text {
+    position: relative;
+    font-weight: bold;
+    @include font-size(40);
+    color: #fff;
+    z-index: 10;
+    @include mq(sp) {
+        @include font-size(34);
+    }
+}

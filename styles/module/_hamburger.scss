@@ -1,0 +1,36 @@
+.hamburger {
+    display: none;
+    @include mq(sp) {
+        display: block;
+        z-index: 9999;
+        > span {
+            display: block;
+            margin-bottom: 8px;
+            background-color: #222222;
+            width: 22px;
+            height: 1px;
+            transition: all .2s;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.hamburger-open {
+    &.hamburger {
+        & > span {
+            &:first-child {
+                transform: translateY(9px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                transform: translateY(-9px) rotate(45deg);
+            }
+        }
+    }
+    + nav {
+        transform: translateY(0);
+    }
+}

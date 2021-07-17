@@ -1,0 +1,28 @@
+.arrow {
+    position: relative;
+    background-color: #222222;
+    border-radius: 100vh;
+    width: 30px;
+    height: 2px;
+    vertical-align: middle;
+    margin-left: auto;
+    top: 2px;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        right: -1px;
+        background-color: #222222;
+        border-radius: 100vh;
+        width: 13px;
+        height: 2px;
+        transform: rotate(30deg);
+    }
+    &--white {
+        @extend .arrow;
+        background-color: #fff;
+        &::after {
+            background-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+html {
+	position: relative;
+	box-sizing: border-box;
+	letter-spacing: 0.05em;
+	font-family: $montserrat, $noto;
+	height: 100%;
+	font-size: 62.5%;
+	z-index: -1000;
+}
+body {
+	position: relative;
+	overflow-x: hidden;
+	height: 100%;
+	z-index: -100;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+ul,ol {
+	list-style: none;
+}
+main {
+	position: relative;
+	z-index: -50;
+}
