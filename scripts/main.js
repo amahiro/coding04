@@ -28,26 +28,25 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     });
     //swiperの切り替え(スマホサイズのみ起動する)
-    var destroyed = true;
-    $(window).resize(function(){
-        $('.swiper-container').each(function(){
-            if (destroyed == false) {
-                this.swiper.destroy();
-                destroyed = true;
-            }
-        });
-        var w = $(window).width();
-        makeSwiper(w);
+    let destroyed = true;
+    const sContainer = document.querySelector('.swiper-container');
+    window.addEventListener('resize', function() {
+        if(destroyed == false) {
+            sContainer.swiper.destory();
+            destroyed = true;
+        }
+        const browserWidth = window.innerWidth;
+        makeSwiper(browserWidth);
     });
-    $(function(){
-        var w = $(window).width();
-        makeSwiper(w);
-    });
-    function makeSwiper(w) {
-        if (w >= 701) {
-            $('.swiper-wrapper').removeAttr('style');
-            $('.swiper-slide').removeAttr('style');
-        } else if (w < 701) {
+    const browserWidth = window.innerWidth;
+    makeSwiper(browserWidth);
+    function makeSwiper(browserWidth) {
+        const sWrapper = document.querySelector('.swiper-wrapper');
+        const sSlide = document.querySelector('.swiper-slide');
+        if (browserWidth >= 701) {
+            sWrapper.removeAttribute('style');
+            sSlide .removeAttribute('style');
+        } else if (browserWidth < 701) {
             new HeroSlider('.swiper-container');
             destroyed = false;
         }
