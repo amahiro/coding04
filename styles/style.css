@@ -598,6 +598,7 @@ module
   .hamburger {
     display: block;
     z-index: 9999;
+    position: fixed;
   }
   .hamburger > span {
     display: block;
